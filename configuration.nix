@@ -5,6 +5,9 @@
     enable = true;
     windowManager.awesome.enable = true;
     displayManager.defaultSession = "none+awesome";
+    displayManager.lightdm.enable = true;
+    displayManager.autoLogin.enable = true;
+    displayManager.autoLogin.user = "grezar";
     desktopManager.xterm.enable = false;
   };
 
