@@ -44,7 +44,8 @@ function bootstrap() {
     ${PWD}/ root@${NIXADDR}:/nix-config
     # switch
     ssh ${SSH_OPTIONS} -p${NIXPORT} root@${NIXADDR} " \
-      sudo NIXPKGS_ALLOW_UNSUPPORTED_SYSTEM=1 nixos-rebuild switch --flake \"/nix-config#${NIXNAME}\" \
+      sudo NIXPKGS_ALLOW_UNSUPPORTED_SYSTEM=1 nixos-rebuild switch --flake \"/nix-config#${NIXNAME}\"; \
+      sudo reboot \
     "
 }
 
