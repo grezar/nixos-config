@@ -36,6 +36,7 @@
             # easy to visit stuff in here. We only use NAT networking anyways.
             networking.firewall.enable = false;
           }
+          ./configuration.nix
           ./hardware-configuration.nix
         ];
       };
