@@ -9,7 +9,7 @@
 
   services.xserver = {
     enable = true;
-    dpi = 220;
+    dpi = 240;
     windowManager.awesome.enable = true;
     desktopManager.xterm.enable = false;
     resolutions = [{ x = 2880; y = 1800; }];
