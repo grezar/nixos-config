@@ -11,12 +11,14 @@
     enable = true;
     dpi = 220;
     windowManager.awesome.enable = true;
-    displayManager.defaultSession = "none+awesome";
-    displayManager.lightdm.enable = true;
-    displayManager.autoLogin.enable = true;
-    displayManager.autoLogin.user = "grezar";
     desktopManager.xterm.enable = false;
     resolutions = [{ x = 2880; y = 1800; }];
+    displayManager = {
+      defaultSession = "none+awesome";
+      lightdm.enable = true;
+      autoLogin.enable = true;
+      autoLogin.user = "grezar";
+    };
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
