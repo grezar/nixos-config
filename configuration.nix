@@ -1,11 +1,22 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ./modules/vmware-guest.nix
+  ];
+
   # We require 5.14+ for VMware Fusion on M1.
   boot.kernelPackages = pkgs.linuxPackages_5_15;
 
   # We expect to run the VM on hidpi machines.
   hardware.video.hidpi.enable = true;
+
+  # Disable the default module and import our override. We have
+  # customizations to make this work on aarch64.
+  disabledModules = [ "virtualisation/vmware-guest.nix" ];
+
+  # Enable VMWare guest support
+  virtualisation.vmware.guest.enable = true;
 
   services.xserver = {
     enable = true;
