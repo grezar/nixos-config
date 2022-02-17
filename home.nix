@@ -1,6 +1,14 @@
 { config, pkgs, ... }:
 
 {
+  programs.zsh = {
+    enable = true;
+    shellAliases = {
+      pbcopy = "xclip";
+      pbpaste = "xclip -o";
+    };
+  };
+
   programs.git = {
     enable = true;
     userName = "grezar";

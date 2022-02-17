@@ -40,4 +40,8 @@
     shell = pkgs.zsh;
     extraGroups = ["wheel"];
   };
+
+  environment.systemPackages = with pkgs; [
+    xclip
+  ];
 }
