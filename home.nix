@@ -30,6 +30,7 @@
     settings = {
       env.TERM = "xterm-256color";
       font = {
+        normal.family = "JetBrainsMono Nerd Font";
         size = 18.0;
       };
     };

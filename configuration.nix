@@ -18,6 +18,10 @@
   # Enable VMWare guest support
   virtualisation.vmware.guest.enable = true;
 
+  fonts.fonts = with pkgs; [
+    (nerdfonts.override { fonts = ["JetBrainsMono"]; })
+  ];
+
   services.xserver = {
     enable = true;
     dpi = 240;
