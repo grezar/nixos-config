@@ -33,6 +33,10 @@
       lightdm.enable = true;
       autoLogin.enable = true;
       autoLogin.user = "grezar";
+      sessionCommands = ''
+        ${pkgs.xlibs.xset}/bin/xset r rate 200 40
+        ${pkgs.xorg.xrandr}/bin/xrandr -s '2560x1600'
+      '';
     };
   };
 
