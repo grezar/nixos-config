@@ -40,6 +40,7 @@
       github.user = "grezar";
       push.default = "tracking";
       init.defaultBranch = "main";
+      rebase.autosquash = true;
     };
   };
 
