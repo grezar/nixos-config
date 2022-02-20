@@ -6,6 +6,7 @@
     ./git.nix
     ./neovim.nix
     ./zsh.nix
+    ./tmux.nix
   ];
 }
 
