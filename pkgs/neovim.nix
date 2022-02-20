@@ -63,6 +63,7 @@
       set cursorline
 
       inoremap <silent> jk <ESC>
+      nmap <Esc><Esc> :noh<CR>
     '';
     extraPackages = with pkgs; [ fzf ];
   };
