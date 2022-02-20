@@ -77,5 +77,6 @@
   environment.systemPackages = with pkgs; [
     xclip
     tree
+    ripgrep
   ];
 }
