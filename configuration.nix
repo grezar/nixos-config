@@ -27,7 +27,7 @@
     dpi = 240;
     windowManager.awesome.enable = true;
     desktopManager.xterm.enable = false;
-    resolutions = [{ x = 2880; y = 1800; }];
+    resolutions = [{ x = 1920; y = 1080; }];
     displayManager = {
       defaultSession = "none+awesome";
       lightdm.enable = true;
@@ -35,7 +35,7 @@
       autoLogin.user = "grezar";
       sessionCommands = ''
         ${pkgs.xlibs.xset}/bin/xset r rate 200 40
-        ${pkgs.xorg.xrandr}/bin/xrandr -s '2560x1600'
+        ${pkgs.xorg.xrandr}/bin/xrandr -s '1920x1080'
       '';
     };
   };
