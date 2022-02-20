@@ -79,5 +79,6 @@
     tree
     ripgrep
     fzf
+    gcc
   ];
 }
