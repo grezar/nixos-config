@@ -78,5 +78,6 @@
     xclip
     tree
     ripgrep
+    fzf
   ];
 }

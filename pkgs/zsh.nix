@@ -6,6 +6,7 @@
     shellAliases = {
       pbcopy = "xclip";
       pbpaste = "xclip -o";
+      g = "cd ~/ghq/$(ghq list | fzf --reverse)";
     };
     plugins = [
       {
