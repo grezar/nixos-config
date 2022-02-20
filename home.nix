@@ -33,6 +33,11 @@
     enable = true;
     userName = "grezar";
     userEmail = "grezar.dev@gmail.com";
+    aliases = {
+      st = "status";
+      ch = "checkout";
+      br = "branch";
+    };
     extraConfig = {
       branch.autosetuprebase = "always";
       color.ui = true;
