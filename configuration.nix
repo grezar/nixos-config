@@ -5,6 +5,31 @@
     ./modules/vmware-guest.nix
   ];
 
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+
+  # Enable the OpenSSH daemon.
+  services.openssh.enable = true;
+  services.openssh.passwordAuthentication = true;
+  # FIXME: shouldn't be allowed
+  services.openssh.permitRootLogin = "yes";
+
+  # My timezone
+  time.timeZone = "Asia/Tokyo";
+
+  # Don't require password for sudo.
+  security.sudo.wheelNeedsPassword = false;
+
+  # Select internationalisation properties.
+  i18n.defaultLocale = "en_US.UTF-8";
+
+  # Hostname.
+  networking.hostName = "dev";
+
+  # Disable the firewall since we're in a VM and we want to make it
+  # easy to visit stuff in here. We only use NAT networking anyways.
+  networking.firewall.enable = false;
+
   # We require 5.14+ for VMware Fusion on M1.
   boot.kernelPackages = pkgs.linuxPackages_5_15;
 
