@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   home.sessionVariables = {
@@ -11,19 +11,16 @@
       pbcopy = "xclip";
       pbpaste = "xclip -o";
     };
-    # FIXME: I can't put p10k.zsh with
-    # `home.file.".p10k.zsh".source = ".p10k.zsh"`
-    # or by putting p10k on plugins so I gave up to put p10k config
-    # declaretively. It focrces me to generate p10k config
-    # every time when I set up a new machine.
-    initExtra = ''
-      source ~/.p10k.zsh
-    '';
     plugins = [
       {
         name = "powerlevel10k";
         src = pkgs.zsh-powerlevel10k;
         file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+      }
+      {
+        name = "powerlevel10k-config";
+        src = lib.cleanSource ./p10k-config;
+        file = ".p10k.zsh";
       }
     ];
   };
