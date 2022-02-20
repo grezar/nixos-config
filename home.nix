@@ -5,6 +5,10 @@
     EDITOR="nvim";
   };
 
+  home.packages = with pkgs; [
+    ghq
+  ];
+
   programs.zsh = {
     enable = true;
     shellAliases = {
