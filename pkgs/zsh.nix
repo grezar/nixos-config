@@ -8,6 +8,9 @@
       pbpaste = "xclip -o";
       g = "cd ~/ghq/$(ghq list | fzf --reverse)";
     };
+    initExtra = ''
+      bindkey -e
+    '';
     plugins = [
       {
         name = "powerlevel10k";
