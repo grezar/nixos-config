@@ -7,6 +7,25 @@
     vimAlias = true;
     withNodeJs = true;
     withPython3 = true;
+    coc = {
+      enable = true;
+      settings = ''
+        {
+        	"languageserver": {
+        		"terraform": {
+        			"command": "terraform-ls",
+        			"args": ["serve"],
+        			"filetypes": [
+        				"terraform",
+        				"tf"
+        			],
+        			"initializationOptions": {},
+        			"settings": {}
+        		}
+        	}
+        }
+      '';
+    };
     plugins = with pkgs.vimPlugins; [
       nord-vim
       vim-airline
