@@ -9,6 +9,7 @@
       st = "status";
       ch = "checkout";
       br = "branch";
+      delete-merged-branches = "git branch --merged | egrep -v '\*|main|master' | xargs git branch -d";
     };
     extraConfig = {
       branch.autosetuprebase = "always";
