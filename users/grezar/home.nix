@@ -20,5 +20,6 @@
     jq
     kubectl
     kubernetes-helm
+    telepresence2
   ];
 }
