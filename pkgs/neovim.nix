@@ -47,6 +47,13 @@
         '';
       }
       fzf-vim
+      {
+        plugin = vim-terraform;
+        config = ''
+          let g:terraform_align=1
+          let g:terraform_fmt_on_save=1
+        '';
+      }
 
       {
         plugin = coc-nvim;
