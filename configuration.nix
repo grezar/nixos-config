@@ -11,8 +11,7 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
   services.openssh.passwordAuthentication = true;
-  # FIXME: shouldn't be allowed
-  services.openssh.permitRootLogin = "yes";
+  services.openssh.permitRootLogin = "no";
 
   # My timezone
   time.timeZone = "Asia/Tokyo";
