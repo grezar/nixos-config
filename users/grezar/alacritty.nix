@@ -8,7 +8,7 @@
       env.TERM = "xterm-256color";
       font = {
         normal.family = "JetBrainsMono Nerd Font";
-        size = 14.0;
+        size = 12.0;
       };
       # porting of https://github.com/arcticicestudio/nord-alacritty
       colors = {
