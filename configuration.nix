@@ -43,6 +43,9 @@
   # Enable VMWare guest support
   virtualisation.vmware.guest.enable = true;
 
+  # Enable docker
+  virtualisation.docker.enable = true;
+
   fonts.fonts = with pkgs; [
     (nerdfonts.override { fonts = ["JetBrainsMono"]; })
   ];
