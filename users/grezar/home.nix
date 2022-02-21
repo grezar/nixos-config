@@ -15,6 +15,7 @@
   };
 
   home.packages = with pkgs; [
+    feh
     ghq
     terraform-ls # used by neovim
     jq

@@ -9,5 +9,6 @@
     ./zsh.nix
     ./tmux.nix
     ./go.nix
+    ./i3.nix
   ];
 }

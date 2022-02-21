@@ -52,18 +52,22 @@
   services.xserver = {
     enable = true;
     dpi = 140;
-    windowManager.awesome.enable = true;
     desktopManager.xterm.enable = false;
     resolutions = [{ x = 1920; y = 1080; }];
     displayManager = {
-      defaultSession = "none+awesome";
       lightdm.enable = true;
       autoLogin.enable = true;
       autoLogin.user = "grezar";
-      sessionCommands = ''
-        ${pkgs.xlibs.xset}/bin/xset r rate 200 40
-        ${pkgs.xorg.xrandr}/bin/xrandr -s '1920x1080'
-      '';
+      # Use a fake session. The actual session is managed by Home Manager.
+      # https://discourse.nixos.org/t/opening-i3-from-home-manager-automatically/4849/11
+      defaultSession = "none+fake";
+      session = [
+        {
+          manage = "window";
+          name = "fake";
+          start = "";
+        }
+      ];
     };
   };
 
