@@ -14,5 +14,6 @@
     terraform-ls # used by neovim
     jq
     kubectl
+    kubernetes-helm
   ];
 }
