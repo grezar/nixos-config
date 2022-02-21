@@ -1,7 +1,8 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   imports = [
+    ./home.nix
     ./alacritty.nix
     ./git.nix
     ./neovim.nix

@@ -2,7 +2,12 @@
 
 {
   imports = [
-    ./pkgs
+    ./alacritty.nix
+    ./git.nix
+    ./neovim.nix
+    ./zsh.nix
+    ./tmux.nix
+    ./go.nix
   ];
 
   home.sessionVariables = {
