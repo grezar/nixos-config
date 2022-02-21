@@ -83,5 +83,6 @@
     ripgrep
     fzf
     gcc
+    delta
   ];
 }
