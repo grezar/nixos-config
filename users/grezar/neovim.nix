@@ -46,7 +46,6 @@
           nnoremap <silent> <Leader>s :Rg<CR>
         '';
       }
-      fzf-vim
       {
         plugin = vim-terraform;
         config = ''
@@ -75,7 +74,6 @@
           autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
         '';
       }
-      coc-go
       coc-solargraph
     ];
     extraConfig = ''
