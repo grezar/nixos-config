@@ -10,5 +10,6 @@
     ./tmux.nix
     ./go.nix
     ./i3.nix
+    ./chromium.nix
   ];
 }
