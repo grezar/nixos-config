@@ -22,5 +22,6 @@
     kubectl
     kubernetes-helm
     telepresence2
+    awscli2
   ];
 }
