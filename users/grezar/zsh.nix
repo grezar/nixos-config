@@ -8,6 +8,7 @@
       pbpaste = "xclip -o";
       g = "cd ~/ghq/$(ghq list | fzf --reverse)";
       tf = "terraform";
+      k = "kubectl";
     };
     initExtra = ''
       bindkey -e
