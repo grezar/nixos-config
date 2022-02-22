@@ -23,5 +23,6 @@
     kubernetes-helm
     telepresence2
     awscli2
+    kubie
   ];
 }
