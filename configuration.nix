@@ -1,10 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  imports = [
-    ./modules/vmware-guest.nix
-  ];
-
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -35,19 +31,14 @@
   # We expect to run the VM on hidpi machines.
   hardware.video.hidpi.enable = true;
 
-  # Disable the default module and import our override. We have
-  # customizations to make this work on aarch64.
-  disabledModules = [ "virtualisation/vmware-guest.nix" ];
-
-  # Enable VMWare guest support
-  virtualisation.vmware.guest.enable = true;
-
   # Enable docker
   virtualisation.docker.enable = true;
 
   fonts.fonts = with pkgs; [
     (nerdfonts.override { fonts = ["JetBrainsMono"]; })
   ];
+
+  services.spice-vdagentd.enable = true;
 
   services.xserver = {
     enable = true;

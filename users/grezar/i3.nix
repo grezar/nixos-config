@@ -6,6 +6,7 @@
     initExtra = ''
       ${pkgs.xlibs.xset}/bin/xset r rate 200 40
       ${pkgs.xorg.xrandr}/bin/xrandr -s '1920x1080'
+      ${pkgs.spice-vdagent}/bin/spice-vdagent
     '';
   };
 
