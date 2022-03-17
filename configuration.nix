@@ -82,6 +82,7 @@
     fzf
     gcc
     delta
+    bind
     globalprotect-openconnect
   ];
 }
