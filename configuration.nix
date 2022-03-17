@@ -62,6 +62,10 @@
     };
   };
 
+  services.globalprotect = {
+    enable = true;
+  };
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.grezar = {
     isNormalUser = true;
@@ -78,5 +82,6 @@
     fzf
     gcc
     delta
+    globalprotect-openconnect
   ];
 }
