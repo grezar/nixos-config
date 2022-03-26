@@ -84,5 +84,6 @@
     delta
     bind
     globalprotect-openconnect
+    unzip
   ];
 }
