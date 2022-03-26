@@ -25,5 +25,6 @@
     awscli2
     kubie
     circleci-cli
+    kubebuilder
   ];
 }
