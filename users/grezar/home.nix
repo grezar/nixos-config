@@ -24,5 +24,6 @@
     telepresence2
     awscli2
     kubie
+    circleci-cli
   ];
 }
