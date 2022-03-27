@@ -26,5 +26,6 @@
     kubie
     circleci-cli
     kubebuilder
+    kind
   ];
 }
