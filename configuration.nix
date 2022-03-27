@@ -72,7 +72,7 @@
     home = "/home/grezar";
     description = "grezar";
     shell = pkgs.zsh;
-    extraGroups = ["wheel"];
+    extraGroups = ["wheel" "docker"];
   };
 
   environment.systemPackages = with pkgs; [
