@@ -85,5 +85,6 @@
     bind
     globalprotect-openconnect
     unzip
+    gnumake
   ];
 }
