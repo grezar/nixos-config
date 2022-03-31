@@ -27,5 +27,6 @@
     circleci-cli
     kubebuilder
     kind
+    conftest
   ];
 }
