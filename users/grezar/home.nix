@@ -30,5 +30,6 @@
     conftest
     terraform
     gh
+    ruby
   ];
 }
