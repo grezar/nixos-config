@@ -28,5 +28,7 @@
     kubebuilder
     kind
     conftest
+    terraform
+    gh
   ];
 }
