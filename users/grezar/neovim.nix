@@ -85,6 +85,7 @@
       set nobackup
       set number
       set cursorline
+      set clipboard=unnamedplus
 
       inoremap <silent> jk <ESC>
       nmap <silent> <Esc><Esc> :noh<CR>
