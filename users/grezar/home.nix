@@ -31,5 +31,6 @@
     terraform
     gh
     ruby
+    docker-compose_2
   ];
 }
