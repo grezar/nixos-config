@@ -32,5 +32,6 @@
     gh
     ruby
     docker-compose_2
+    kustomize
   ];
 }
