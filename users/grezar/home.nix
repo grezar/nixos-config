@@ -33,5 +33,8 @@
     ruby
     docker-compose_2
     kustomize
+    nodejs-17_x
+    autoconf
+    automake
   ];
 }
