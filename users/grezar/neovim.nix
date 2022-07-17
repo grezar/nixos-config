@@ -75,6 +75,9 @@
         '';
       }
       coc-solargraph
+      coc-tsserver
+      coc-prettier
+      coc-eslint
     ];
     extraConfig = ''
       syntax enable
