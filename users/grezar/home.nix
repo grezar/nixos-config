@@ -37,5 +37,7 @@
     autoconf
     automake
     circleci-cli
-  ];
+  ] ++ (with nodePackages;[
+    typescript
+  ]);
 }
