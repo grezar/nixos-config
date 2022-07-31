@@ -22,8 +22,21 @@
         			"initializationOptions": {},
         			"settings": {}
         		}
-        	}
-        }
+        	},
+          "coc.preferences.formatOnSaveFiletypes": [
+            "css",
+            "html",
+            "markdown",
+            "typescriptreact",
+            "typescript",
+            "javascriptreact",
+            "javascript",
+            "json",
+            "graphql",
+            "go",
+            "ruby",
+            "terraform"
+          ]
       '';
     };
     plugins = with pkgs.vimPlugins; [
@@ -80,6 +93,7 @@
       coc-eslint
     ];
     extraConfig = ''
+      filetype plugin indent on
       syntax enable
       set background=dark
       colorscheme nord
