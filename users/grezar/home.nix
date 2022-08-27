@@ -10,6 +10,14 @@
     ./go.nix
   ];
 
+  programs.home-manager = {
+    enable = true;
+  };
+
+  home.stateVersion = "22.05";
+  home.username = "makita.riki";
+  home.homeDirectory = "/Users/makita.riki";
+
   home.sessionVariables = {
     EDITOR="nvim";
   };
@@ -31,13 +39,15 @@
     terraform
     gh
     ruby
-    docker-compose_2
+    docker-compose
     kustomize
-    nodejs-17_x
+    nodejs-18_x
     autoconf
     automake
     circleci-cli
     bc
+    ripgrep
+    fzf
   ] ++ (with nodePackages;[
     typescript
     yarn

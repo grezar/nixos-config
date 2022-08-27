@@ -4,8 +4,6 @@
   programs.zsh = {
     enable = true;
     shellAliases = {
-      pbcopy = "xclip";
-      pbpaste = "xclip -o";
       g = "cd ~/ghq/$(ghq list | fzf --reverse)";
       tf = "terraform";
       k = "kubectl";
